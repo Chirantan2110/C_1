@@ -12,6 +12,17 @@ int main() {
     scanf("%f", &annual_income);
 
     scanf("%d", &years_employed);
+// Check if all conditions are met using logical AND (&&) and store the result in _Bool
+    is_eligible = (age >= 18 && annual_income >= 30000 && years_employed >= 2);
+
+    // Output based on eligibility status
+    if (is_eligible) {
+        printf("Eligible for loan.\n");
+        printf("Loan processing started.\n");
+    } else {
+        printf("Not eligible for loan.\n");
+        printf("Loan processing not started.\n");
+    }
 
 return 0;
 }
