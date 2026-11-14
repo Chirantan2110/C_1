@@ -23,6 +23,5 @@ int main() {
         printf("Not eligible for loan.\n");
         printf("Loan processing not started.\n");
     }
-
 return 0;
 }
